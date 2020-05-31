@@ -15,6 +15,12 @@ h3 {
 	text-align: center;
 }
 
+a {
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  text-align: center;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(0);
@@ -84,13 +90,11 @@ h3 {
 }
 
 body {
-  width: 100%;
-  height: 100%;
   background-color: #424257;
 }
 
 footer {
-    height: 0;
+  height: 0;
 	text-align: center;
 	margin-top: 50px;
 	font-family: "Courier New", Courier, monospace;
