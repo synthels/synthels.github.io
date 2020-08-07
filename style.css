@@ -15,6 +15,13 @@ h3 {
 	text-align: center;
 }
 
+/* Let's have some responsiveness in our lives */
+@media screen and (max-width: 481px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+
 a {
   font-family: Verdana, Geneva, sans-serif;
   color: white;
