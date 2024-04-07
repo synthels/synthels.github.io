@@ -1,0 +1,32 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: true
+  disqus_shortname: 'synthels'
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-ID: ''
+
+menu:
+- {name: 'Home',   url: ''}
+- {name: 'Posts',   url: 'posts.html'}
+- {name: 'About',   url: 'about.html'}
+- {name: 'Music', url: 'music.html'}
+- {name: 'Contact', url: 'contact.html'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- {icon: 'github',     link: 'https://github.com/synthels'}
+- {icon: 'twitter',    link: 'https://twitter.com/synthels'}
+- {icon: 'envelope',   link: 'mailto:synthels.me@gmail.com'}
+
+# Customize site text
+pagination:
+  next_page: 'Newer'
+  previous_page: 'Older'
+
+sharing_button_prompt: 'Share this post'
+
+# Maybe uncomment this at some point
+# related_posts: 'Related:'
+
+post_date_prefix: 'Written on'
