@@ -19,7 +19,7 @@ body {
   }
 }
 
-h1{
+h1 {
   font-size: 2rem;
 }
 
@@ -60,6 +60,25 @@ hr {
   border-top: 1px solid $extra-light-gray-color;
 }
 
+/* 
+  Images
+*/
+
+figure {
+  text-align: center;
+  color: #818181;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.diagram {
+  padding: 8px;
+}
+
 /*
   Tables
 */
@@ -77,4 +96,20 @@ table, th, td {
 th, td {
   padding: 15px;
   text-align: left;
+}
+
+/*
+  Math
+*/
+
+.theorem {
+  padding: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 1px;
+
+  .name {
+    font-weight: bold;
+  }
 }
