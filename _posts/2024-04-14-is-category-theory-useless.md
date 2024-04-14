@@ -6,7 +6,7 @@ categories: journal
 tags: [category-theory, algebra, topology]
 ---
 
-Category theory has traditionally always been a matter of great contention. Since its inception, it has been applied almost everywhere across mathematics. Most notably it is often credited for having the greatest impact in the development of homological algebra and later algebraic topology & geometry. While its impact on mathematics as a whole is indeed seminal, a significant part of the mathematical community (largely that of the [constructive](https://en.wikipedia.org/wiki/Constructivism_(philosophy_of_mathematics)) variety) still insists that this impact is purely cosmetic and merits no real value.
+Category theory has traditionally always been a matter of great contention. Since its inception, it has been applied almost everywhere across mathematics. Most notably it is often credited for having the greatest impact in the development of [homological algebra](https://en.wikipedia.org/wiki/Homological_algebra) and later [algebraic topology](https://en.wikipedia.org/wiki/Algebraic_topology) & [geometry](https://en.wikipedia.org/wiki/Algebraic_geometry). While its impact on mathematics as a whole is indeed seminal, a significant part of the mathematical community (largely that of the [constructive](https://en.wikipedia.org/wiki/Constructivism_(philosophy_of_mathematics)) variety) still insists that this impact is purely cosmetic and merits no real value.
 
 {% include image.html url="/assets/img/is-category-theory-useless/nerd.jpg" description="Average category theorist, according to analysts and constuctivists." %}
 
@@ -61,7 +61,7 @@ b_2\xrightarrow{g_3}
 y
 $$
 
-then necessarily $f_1 \circ \cdots \circ f_n = g_1 \circ \cdots \circ g_n$. A _functor_, on the other hand, is a mapping between two categories, analogous to a [homomorphism](https://en.wikipedia.org/wiki/Homomorphism) in algebra, a [hom**e**omorphism](https://en.wikipedia.org/wiki/Homeomorphism) in topology, or a [linear transformation](https://en.wikipedia.org/wiki/Linear_transformation) in linear algebra. In particular, we have the following definition.
+then necessarily $f_1 \circ \cdots \circ f_n = g_1 \circ \cdots \circ g_n$. A _functor_, on the other hand, is a mapping between two categories, analogous to a [homomorphism](https://en.wikipedia.org/wiki/Homomorphism) in algebra, a [hom**e**omorphism](https://en.wikipedia.org/wiki/Homeomorphism) in topology, or a linear transformation in linear algebra. In particular, we have the following definition.
 
 <div class="theorem">
     <span class="name">Definition (Functor)</span>
@@ -92,7 +92,7 @@ This particular concept is a bit more abstract than the ones presented above, so
 <div class="theorem">
     <span class="name">Example (Dual vector space)</span>
     <span class="content">
-        Consider a field $\mathbb{k}$ and let $\mathbf{Vect}_\mathbb{k}$ be the category of all $\mathbb{k}$-vector spaces, with linear transformations as morphisms. Let $V$ be an object in this category. Its <em>dual vector space</em>, $V^*$, is defined as the set of all linear maps $V \to \mathbb{k}$ ($\mathbb{k}$ is too a vector space over itself). These vector spaces turn out to be isomorphic, which we can prove by showing that they have the same dimension (these are equivalent statements). The concrete way to do it, is to explicitly construct a basis for $V^*$. Choosing a basis $e_1, e_2, \dots, e_n$ of $V$, we let
+        Consider a field $\mathbb{k}$ and let $\mathbf{Vect}_\mathbb{k}$ be the category of all $\mathbb{k}$-vector spaces, with <a href="https://en.wikipedia.org/wiki/Linear_transformation">linear transformations</a> as morphisms. Let $V$ be an object in this category. Its <em>dual vector space</em>, $V^*$, is defined as the set of all linear maps $V \to \mathbb{k}$ ($\mathbb{k}$ is too a vector space over itself). These vector spaces turn out to be isomorphic, which we can prove by showing that they have the same <a href="https://en.wikipedia.org/wiki/Dimension_(vector_space)">dimension</a> (these are equivalent statements). The concrete way to do it, is to explicitly construct a <a href="https://en.wikipedia.org/wiki/Basis_(linear_algebra)">basis</a> for $V^*$. Choosing a basis $e_1, e_2, \dots, e_n$ of $V$, we let
         $$
         e_i^*(e_j) = \begin{cases}
         1,\; i = j \\
