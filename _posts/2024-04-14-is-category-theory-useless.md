@@ -141,7 +141,7 @@ $$
 \mathrm{Eq}(f, g) = \{x \in X : f(x) = g(x)\}
 $$
 
-this definition may work fine for sets, but in order to motivate the categorical machinery, we will try to give a definition through the universal morphism. Indeed, let's consider all the properties that $\mathrm{Eq}$ satisfies. Throughout, let $$X = \{x_1, x_2, \dots, x_n\}$$ be a set and $f, g: X \to X$ be two functions.
+this definition may work fine for sets, but in order to motivate the categorical machinery, we will try to give a definition through the universal morphism. Indeed, let's consider all the properties that $\mathrm{Eq}$ satisfies. Throughout, let $$X = \{x_1, x_2, \dots, x_n\}$$ be a set and $f, g: X \to X$ be two functions. Finally, let $$\{y_1, y_2, \dots, y_m\}$$ be their equaliser.
 
 <div class="theorem">
     <span class="name">Example (Properties of the equaliser)</span>
@@ -157,10 +157,10 @@ The idea is to now shift our attention to a function, rather than a set. Conside
 
 $$
 \mathrm{sequence}(k) = \begin{cases}
-        x_1,\; k \equiv 1 \pmod n \\
-        x_2,\; k \equiv 2 \pmod n \\
+        y_1,\; k \equiv 1 \pmod m \\
+        y_2,\; k \equiv 2 \pmod m \\
         \vdots \\
-        x_n, \; k \equiv 0 \pmod n
+        y_m, \; k \equiv 0 \pmod m
         \end{cases}
 $$
 
