@@ -1,0 +1,46 @@
+@use "theme" as *;
+
+.post {
+  background-color: $extra-extra-light-gray-color;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  list-style: none;
+
+  .thumbnail-container {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+  
+  .thumbnail-container img {
+    margin-top: -11.5%;
+    margin-bottom: -11.5%;
+  }
+}
+
+.post-title {
+  color: $darker-gray-color;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.post-date {
+  color: $light-gray-color;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+
+  .post-tooltip {
+    display: block;
+    margin-top:3px;
+    margin-bottom: 1rem;
+    color: $light-gray-color;
+    font-family: $font-family;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,48 @@
+<script>
+  onload = (e) => {
+    menu = document.getElementById("navbar");
+    socials = document.getElementById("socials");
+    hamburger = document.getElementById("hamburger");
+
+    const navbar = (d) => {
+      menu.style.display = d;
+      socials.style.display = d;
+    }
+
+    hamburger.onclick = () => {
+      if (menu.style.display === "none" || menu.style.display === "") {
+        navbar("block");
+      } else {
+        navbar("none");
+      }
+    }
+
+    onresize = (e) => {
+      w = document.body.clientWidth;
+      if (w > 768) {
+        navbar("block");
+      } else {
+        navbar("none");
+      }
+    }
+  }
+</script>
+
+<div class="menu">
+  <div class="hamburger" id="hamburger">
+    <span class="hamburger-text">Menu</span>
+    <span class="fa fa-bars"></span>
+  </div>
+  <nav class="menu-content" id="navbar">
+    {% for item in site.data.settings.menu %}
+      <div class="menu-item">
+        <a href="{{ site.github.url }}/{{ item.url }}">
+          {{ item.name }}
+        </a>
+      </div>
+    {% endfor %}
+  </nav>
+  <nav class="social-icons" id="socials">
+    {% include social-icons.html %}
+  </nav>
+</div>

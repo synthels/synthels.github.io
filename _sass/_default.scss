@@ -1,0 +1,17 @@
+@use "theme" as *;
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+}
+
+.content-container {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: $container-responsive-width) {
+  .container {
+    padding: 3rem;
+  }
+}

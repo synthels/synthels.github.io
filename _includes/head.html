@@ -1,0 +1,33 @@
+<head>
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} &mdash; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/syntax.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    crossorigin="anonymous">
+
+  {% include google-analytics.html %}
+  {% seo %}
+</head>

@@ -1,0 +1,18 @@
+google_id: ''
+
+menu:
+- {name: 'Home', url: ''}
+- {name: 'About', url: 'about.html'}
+
+social:
+- {icon: 'github',     link: 'https://github.com/synthels'}
+- {icon: 'youtube',    link: 'https://youtube.com/@synthels'}
+- {icon: 'twitter',    link: 'https://twitter.com/synthels'}
+- {icon: 'envelope',   link: 'mailto:synthels.me@gmail.com'}
+- {icon: 'rss-square', link: '/feed.xml'}
+
+pagination:
+  next_page: 'Next'
+  previous_page: 'Previous'
+
+post_date_prefix: 'Posted on'

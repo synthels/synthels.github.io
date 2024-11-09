@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="posts-container">
+{% for post in paginator.posts %}
+  <div class="post">
+    {% if post.image %}
+      <div class="thumbnail-container">
+        <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
+      </div>
+    {% endif %}
+    <h1>
+      <a class="post-title" href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    <div class="post-preview">
+      {{ post.content | strip_html | truncate: 100 }} <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
+      <div class="date-time">
+        <span class="post-tooltip">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          {{ post.date | date_to_string }}
+        </span>
+        <span class="post-tooltip">
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          {% include read-time.html %}
+        </span>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">
+      {{ site.data.settings.pagination.previous_page }}
+    </a>
+  {% else %}
+    <span class="pagination-button">
+      {{ site.data.settings.pagination.previous_page }}
+    </span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
+      {{ site.data.settings.pagination.next_page }}
+    </a>
+  {% else %}
+    <span class="pagination-button">
+      {{ site.data.settings.pagination.next_page }}
+    </span>
+  {% endif %}
+</div>

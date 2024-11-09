@@ -1,0 +1,25 @@
+@use "theme" as *;
+
+.footer {
+  color: $light-gray-color;
+  text-align: center;
+  margin: 2rem;
+
+  a {
+    color: $light-gray-color;
+    padding: 10px;
+    text-decoration: none;
+
+    &:hover {
+      color: $dark-gray-color;
+    }
+  }
+
+  .footer-description {
+    margin-top: 3px;
+    margin-bottom: 1rem;
+    color: $light-gray-color;
+    font-family: $font-family;
+    font-size: 0.8rem;
+  }
+}

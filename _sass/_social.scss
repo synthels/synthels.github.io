@@ -1,0 +1,51 @@
+@use "theme" as *;
+
+.social-icons {
+  float: right;
+
+  a {
+    color: $light-gray-color;
+    font-size: 1rem;
+  }
+}
+
+@mixin social-media-icon($color, $transition) {
+  padding: 5px;
+
+  -webkit-transition: $transition;
+  -o-transition: $transition;
+  -ms-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+.fa-envelope {
+  @include social-media-icon($envelope-color, $icon-transition-time);
+}
+
+.fa-twitter {
+  @include social-media-icon($twitter-color, $icon-transition-time);
+}
+
+.fa-youtube {
+  @include social-media-icon($youtube-color, $icon-transition-time);
+}
+
+.fa-github {
+  @include social-media-icon($github-color, $icon-transition-time);
+}
+
+.fa-rss-square {
+  @include social-media-icon($rss-color, $icon-transition-time);
+}
+
+@media (max-width: $container-responsive-width) {
+  .social-icons {
+    float: left;
+    padding-top: 0px;
+  }
+}

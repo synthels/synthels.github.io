@@ -1,0 +1,88 @@
+@use "theme" as *;
+
+body {
+  font-family: $font-family;
+  font-size: 18px;
+  color: $body-color;
+  line-height: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+  color: $dark-gray-color;
+}
+
+a {
+  text-decoration: none;
+  color: $light-blue-color;
+  &:hover {
+    color: $link-color;
+    border-bottom: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: $dark-gray-color;
+}
+
+blockquote {
+  margin: 10px 20px 10px;
+  padding: 0px 15px;
+  border-left: 0.25em solid $extra-light-gray-color;
+  color: $light-gray-color;
+  line-height: 1.5;
+}
+
+hr {
+  border-top: 1px solid $extra-light-gray-color;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+@media (max-width: $container-responsive-width) {
+  body, figcaption {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+
+  body h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
