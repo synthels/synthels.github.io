@@ -27,8 +27,8 @@
   @include social-media-icon($envelope-color, $icon-transition-time);
 }
 
-.fa-twitter {
-  @include social-media-icon($twitter-color, $icon-transition-time);
+.fa-bluesky {
+  @include social-media-icon($bluesky-color, $icon-transition-time);
 }
 
 .fa-youtube {
@@ -39,7 +39,7 @@
   @include social-media-icon($github-color, $icon-transition-time);
 }
 
-.fa-rss-square {
+.fa-rss {
   @include social-media-icon($rss-color, $icon-transition-time);
 }
 

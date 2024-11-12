@@ -5,11 +5,11 @@ menu:
 - {name: 'About', url: 'about.html'}
 
 social:
-- {icon: 'github',     link: 'https://github.com/synthels'}
-- {icon: 'youtube',    link: 'https://youtube.com/@synthels'}
-- {icon: 'twitter',    link: 'https://twitter.com/synthels'}
-- {icon: 'envelope',   link: 'mailto:synthels.me@gmail.com'}
-- {icon: 'rss-square', link: '/feed.xml'}
+- {icon: 'github',    style: 'brands', link: 'https://github.com/synthels'}
+- {icon: 'youtube',   style: 'brands', link: 'https://youtube.com/@synthels'}
+- {icon: 'bluesky',   style: 'brands', link: 'https://bsky.app/profile/synthels.bsky.social'}
+- {icon: 'envelope',  style: 'solid',  link: 'mailto:synthels.me@gmail.com'}
+- {icon: 'rss',       style: 'solid',  link: '/feed.xml'}
 
 pagination:
   next_page: 'Next'

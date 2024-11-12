@@ -17,11 +17,11 @@ layout: default
       {{ post.content | strip_html | truncate: 100 }} <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
       <div class="date-time">
         <span class="post-tooltip">
-          <i class="fa fa-calendar" aria-hidden="true"></i>
+          <i class="fa-solid fa-calendar" aria-hidden="true"></i>
           {{ post.date | date_to_string }}
         </span>
         <span class="post-tooltip">
-          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          <i class="fa-solid fa-clock" aria-hidden="true"></i>
           {% include read-time.html %}
         </span>
       </div>
