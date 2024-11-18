@@ -14,3 +14,7 @@ layout: default
 {% if site.hide_post_date != true %}
   {% include post-date.html %}
 {% endif %}
+
+{% if site.hide_comments != true %}
+  {% include disqus.html %}
+{% endif %}
