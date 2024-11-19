@@ -39,3 +39,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: $container-small-devices-width) {
+  .pagination-button {
+    width: 5rem;
+  }
+
+  .pagination-button:last-child {
+    margin-top: 15px;
+  }
+}
