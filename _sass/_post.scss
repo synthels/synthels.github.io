@@ -1,6 +1,11 @@
 @use "theme" as *;
 
 .post {
+  // do not ask me why this needs to be flex
+  // for margin-top: auto to work
+  display: flex;
+  flex-direction: column;
+
   background-color: $extra-extra-light-gray-color;
   margin-bottom: 5rem;
   padding: 1rem;
@@ -34,6 +39,7 @@
 .date-time {
   display: flex;
   justify-content: space-between;
+  margin-top: auto; // :(
 
   .post-tooltip {
     display: block;
