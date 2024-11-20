@@ -2,7 +2,7 @@ google_id: ''
 
 menu:
 - {name: 'Home', url: ''}
-- {name: 'About', url: 'about.html'}
+- {name: 'About', url: 'about'}
 
 social:
 - {icon: 'github',    style: 'brands', link: 'https://github.com/synthels'}
